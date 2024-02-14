@@ -32,15 +32,15 @@ public class RemoveDuplicates {
 
     private static ListNode createList(int... values) {
         if (values.length == 0) {
-          return null;
+            return null;
         }
         
         ListNode head = new ListNode(values[0]);
         ListNode current = head;
         
         for (int i = 1; i < values.length; i++) {
-          current.next = new ListNode(values[i]);
-          current = current.next;
+            current.next = new ListNode(values[i]);
+            current = current.next;
         }
         return head;
     }
@@ -54,7 +54,7 @@ public class RemoveDuplicates {
     }
 
     public static void main(String[] args) {
-        ListNode head = createList(1,1,2,3,3);
+        ListNode head = createList(1,2,2,2,3);
         printList(deleteDuplicates(head));
     }
 }
