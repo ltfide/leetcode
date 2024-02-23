@@ -18,4 +18,11 @@ public class Assert {
         }
         return !tOrF;
     }
+
+    public static void isEquals(int o1, int o2) {
+        if (o1 != o2) {
+            System.out.println("Expected: " + o1);
+            System.out.println("Result  : " + o2);
+        } 
+    }
 }
